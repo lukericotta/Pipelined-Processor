@@ -1,0 +1,471 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version N-2017.09-SP5 for linux64 - Apr 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /userspace/r/ricotta/.synopsys_dv_prefs.tcl
+# Read in files
+read_file -format verilog {ALU.v BitCell.v cache_fill_FSM.v CacheDecoder_7_128.v CLA3bit.v CLA4bit.v CLA8bit.v CLA16bit.v control.v cpu.v DataArray.v D-Flip-Flop.v EXMEM.v flag.v full_adder.v IDEX.v IFID.v MEMWB.v MetaDataArray.v multicycle_memory.v PADDSB.v PC_control.v PSA_16bit.v ReadDecoder_4_16.v RED.v Register.v RegisterFile.v RegisterNotInFile.v ror.v sll.v sra.v WordDecoder_3_8.v WriteDecoder_4_16.v adder_16bit.v }
+Loading db file '/cae/apps/data/tsmclibs-2013/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_120b/tcbn40lpbwptc.db'
+Loading db file '/cae/apps/data/tsmclibs-2013/digital/Front_End/timing_power_noise/NLDM/tpfn45gsgv18_120a/tpfn45gsgv18tc.db'
+Loading db file '/cae/apps/data/synopsys-2018/syn/N-2017.09-SP5/libraries/syn/gtech.db'
+Loading db file '/cae/apps/data/synopsys-2018/syn/N-2017.09-SP5/libraries/syn/standard.sldb'
+  Loading link library 'tcbn40lpbwptc'
+  Loading link library 'tpfn45gsgv18tc'
+  Loading link library 'gtech'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ALU.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/BitCell.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/cache_fill_FSM.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CacheDecoder_7_128.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA3bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA4bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA8bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA16bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/control.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/cpu.v
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:121: the undeclared symbol 'MEM_memRead' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:122: the undeclared symbol 'MEM_memWrite' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:123: the undeclared symbol 'MEM_memToReg' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:124: the undeclared symbol 'MEM_regWrite' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:125: the undeclared symbol 'MEM_writeFlagReg' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:126: the undeclared symbol 'MEM_regWriteSelect' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:262: the undeclared symbol 'data_write_even' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:263: the undeclared symbol 'data_write_odd' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/DataArray.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/D-Flip-Flop.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/EXMEM.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/flag.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/full_adder.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/IDEX.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/IFID.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/MEMWB.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/MetaDataArray.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PADDSB.v
+Warning:  Little argument or return value checking implemented for system task or function '$readmemh'. (VER-209)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v:46: The statements in initial blocks are ignored. (VER-281)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v:53: Unsupported system task '$readmemh' will be ignored for synthesis. (VER-274)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PC_control.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PSA_16bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ReadDecoder_4_16.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RED.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/Register.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RegisterFile.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RegisterNotInFile.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ror.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/sll.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/sra.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v
+Warning:  /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v:12: The value 000 is too large for the numeric data type being used (VER-1)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v:13: The value 000 is too large for the numeric data type being used (VER-1)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/WriteDecoder_4_16.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/adder_16bit.v
+
+Statistics for case statements in always block at line 34 in file
+	'/userspace/r/ricotta/ECE552/Phase4/ALU.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+
+Inferred tri-state devices in process
+	in routine BitCell line 9 in file
+		'/userspace/r/ricotta/ECE552/Phase4/BitCell.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| Bitline1_tri  | Tri-State Buffer |   1   |
+============================================
+
+Inferred tri-state devices in process
+	in routine BitCell line 11 in file
+		'/userspace/r/ricotta/ECE552/Phase4/BitCell.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| Bitline2_tri  | Tri-State Buffer |   1   |
+============================================
+
+Statistics for case statements in always block at line 58 in file
+	'/userspace/r/ricotta/ECE552/Phase4/cache_fill_FSM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            69            |    auto/auto     |
+|            72            |    auto/auto     |
+|            91            |    auto/auto     |
+|            94            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 13 in file
+	'/userspace/r/ricotta/ECE552/Phase4/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+
+Inferred tri-state devices in process
+	in routine DCell line 26 in file
+		'/userspace/r/ricotta/ECE552/Phase4/DataArray.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Dout_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine dff line 15 in file
+		'/userspace/r/ricotta/ECE552/Phase4/D-Flip-Flop.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred tri-state devices in process
+	in routine MCell line 16 in file
+		'/userspace/r/ricotta/ECE552/Phase4/MetaDataArray.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Dout_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine memory4c line 49 in file
+		'/userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       mem_reg       | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine memory4c line 65 in file
+		'/userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  data_valid_1_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   data_valid_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   data_out_3_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_out_2_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_out_1_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|  data_valid_3_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  data_valid_2_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   memory4c/44    |   64   |   16    |      6       |
+======================================================
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:18: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:19: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:20: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:21: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:30: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:32: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:34: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:36: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully.
+Loaded 39 designs.
+Current design is 'ALU'.
+ALU BitCell cache_fill_FSM CacheDecoder_7_128 CLA3bit CLA4bit CLA8bit CLA16bit control cpu DataArray Block DWord DCell dff EXMEM flag full_adder IDEX IFID MEMWB MetaDataArray MBlock MCell memory4c PADDSB PC_control PSA_16bit ReadDecoder_4_16 Red Register RegisterFile RegisterNotInFile ror sll sra WordDecoder_3_8 WriteDecoder_4_16 adder_16bit
+#set top level
+set current_design cpu
+cpu
+#clock specs
+create_clock -name "clk" -period 10 -waveform {0 1} clk
+Error: Width mismatch on port 'addr' of reference to 'memory4c' in 'cpu'. (LINK-3)
+Warning: Unable to resolve reference 'memory4c' in 'cpu'. (LINK-5)
+Information: Building the design 'look_ahead_4bit'. (HDL-193)
+Warning: Cannot find the design 'look_ahead_4bit' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'look_ahead_4bit' in 'adder_16bit'. (LINK-5)
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+set_dont_touch_network [find port clk]
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+#input delays
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+{rst_n}
+set_input_delay -clock clk 0.25 $prim_inputs
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+set prim_inputs [remove_from_collection [remove_from_collection [all_inputs] [find port rst_n]] [find port clk]]
+#drive strength
+set_driving_cell -lib_cell ND2D2BWP -from_pin A1 -library tcbn401pbwptc $prim_inputs
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+0
+#output delays
+set_output_delay -clock clk 0.5 [all_outputs]
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+set_load 0.1 [all_outputs]
+1
+#wireload and transmission time
+set_wire_load_model -name TSMC32K_Lowk_Conservative -library tcbn40lpbwptc
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+set_max_transition 0.1 [current_design]
+1
+#compile
+compile -map_effort medium
+Warning: Design 'cpu' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'cpu'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | N-2017.09-DWBB_201709.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 248 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: IO pad 'PVSS3DGZ' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVSS2DGZ' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVSS2ANA' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVSS1DGZ' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVSS1ANA' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD2POC' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD2DGZ' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD2ANA' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD1DGZ' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD1ANA' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PCLAMP2ANA' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PCLAMP1ANA' is unusable: unknown logic function.  (OPT-1022)
+
+Received Signal 1 from: PID=819010 (UID=16200)
+
+
+Process terminated by hangup.
+
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version N-2017.09-SP5 for linux64 - Apr 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /userspace/r/ricotta/.synopsys_dv_prefs.tcl
+# Read in files
+read_file -format verilog {ALU.v BitCell.v cache_fill_FSM.v CacheDecoder_7_128.v CLA3bit.v CLA4bit.v CLA8bit.v CLA16bit.v control.v cpu.v DataArray.v D-Flip-Flop.v EXMEM.v flag.v full_adder.v IDEX.v IFID.v MEMWB.v MetaDataArray.v multicycle_memory.v PADDSB.v PC_control.v PSA_16bit.v ReadDecoder_4_16.v RED.v Register.v RegisterFile.v RegisterNotInFile.v ror.v sll.v sra.v WordDecoder_3_8.v WriteDecoder_4_16.v adder_16bit.v }
+Loading db file '/cae/apps/data/tsmclibs-2013/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_120b/tcbn40lpbwptc.db'
+Loading db file '/cae/apps/data/tsmclibs-2013/digital/Front_End/timing_power_noise/NLDM/tpfn45gsgv18_120a/tpfn45gsgv18tc.db'
+Loading db file '/cae/apps/data/synopsys-2018/syn/N-2017.09-SP5/libraries/syn/gtech.db'
+Loading db file '/cae/apps/data/synopsys-2018/syn/N-2017.09-SP5/libraries/syn/standard.sldb'
+  Loading link library 'tcbn40lpbwptc'
+  Loading link library 'tpfn45gsgv18tc'
+  Loading link library 'gtech'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ALU.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/BitCell.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/cache_fill_FSM.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CacheDecoder_7_128.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA3bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA4bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA8bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/CLA16bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/control.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/cpu.v
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:121: the undeclared symbol 'MEM_memRead' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:122: the undeclared symbol 'MEM_memWrite' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:123: the undeclared symbol 'MEM_memToReg' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:124: the undeclared symbol 'MEM_regWrite' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:125: the undeclared symbol 'MEM_writeFlagReg' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:126: the undeclared symbol 'MEM_regWriteSelect' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:262: the undeclared symbol 'data_write_even' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/cpu.v:263: the undeclared symbol 'data_write_odd' assumed to have the default net type, which is 'wire'. (VER-936)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/DataArray.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/D-Flip-Flop.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/EXMEM.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/flag.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/full_adder.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/IDEX.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/IFID.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/MEMWB.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/MetaDataArray.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PADDSB.v
+Warning:  Little argument or return value checking implemented for system task or function '$readmemh'. (VER-209)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v:46: The statements in initial blocks are ignored. (VER-281)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v:53: Unsupported system task '$readmemh' will be ignored for synthesis. (VER-274)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PC_control.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/PSA_16bit.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ReadDecoder_4_16.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RED.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/Register.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RegisterFile.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/RegisterNotInFile.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/ror.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/sll.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/sra.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v
+Warning:  /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v:12: The value 000 is too large for the numeric data type being used (VER-1)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/WordDecoder_3_8.v:13: The value 000 is too large for the numeric data type being used (VER-1)
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/WriteDecoder_4_16.v
+Compiling source file /userspace/r/ricotta/ECE552/Phase4/adder_16bit.v
+
+Statistics for case statements in always block at line 34 in file
+	'/userspace/r/ricotta/ECE552/Phase4/ALU.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+
+Information: Interrupting current command. (INT-2)
+
+Inferred tri-state devices in process
+	in routine BitCell line 9 in file
+		'/userspace/r/ricotta/ECE552/Phase4/BitCell.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| Bitline1_tri  | Tri-State Buffer |   1   |
+============================================
+
+Inferred tri-state devices in process
+	in routine BitCell line 11 in file
+		'/userspace/r/ricotta/ECE552/Phase4/BitCell.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| Bitline2_tri  | Tri-State Buffer |   1   |
+============================================
+
+Statistics for case statements in always block at line 58 in file
+	'/userspace/r/ricotta/ECE552/Phase4/cache_fill_FSM.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            69            |    auto/auto     |
+|            72            |    auto/auto     |
+|            91            |    auto/auto     |
+|            94            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 13 in file
+	'/userspace/r/ricotta/ECE552/Phase4/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+
+Inferred tri-state devices in process
+	in routine DCell line 26 in file
+		'/userspace/r/ricotta/ECE552/Phase4/DataArray.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Dout_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine dff line 15 in file
+		'/userspace/r/ricotta/ECE552/Phase4/D-Flip-Flop.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred tri-state devices in process
+	in routine MCell line 16 in file
+		'/userspace/r/ricotta/ECE552/Phase4/MetaDataArray.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Dout_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine memory4c line 49 in file
+		'/userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       mem_reg       | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine memory4c line 65 in file
+		'/userspace/r/ricotta/ECE552/Phase4/multicycle_memory.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  data_valid_1_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   data_valid_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   data_out_3_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_out_2_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_out_1_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|  data_valid_3_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  data_valid_2_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   memory4c/44    |   64   |   16    |      6       |
+======================================================
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:18: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:19: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:20: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:21: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:30: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:32: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:34: signed to unsigned part selection occurs. (VER-318)
+Warning:  /userspace/r/ricotta/ECE552/Phase4/PADDSB.v:36: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully.
+Information: One more interrupt will exit process. (INT-3)
+Loaded 39 designs.
+Current design is 'ALU'.
+ALU BitCell cache_fill_FSM CacheDecoder_7_128 CLA3bit CLA4bit CLA8bit CLA16bit control cpu DataArray Block DWord DCell dff EXMEM flag full_adder IDEX IFID MEMWB MetaDataArray MBlock MCell memory4c PADDSB PC_control PSA_16bit ReadDecoder_4_16 Red Register RegisterFile RegisterNotInFile ror sll sra WordDecoder_3_8 WriteDecoder_4_16 adder_16bit
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dc_shell> 
+Thank you...
